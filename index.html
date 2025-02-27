@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HBD Henry</title>
+    <link rel="stylesheet" href="style.css">
+	<link rel="icon" href="icon.png">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="moon"></div>
+
+    <div class="welcome">
+        <h1>Hi Henry!</h1>
+        <p>Welcome to your little website! Click below to continue.</p>
+        <button class="let-go-button" onclick="start()">Click</button>
+    </div>
+
+    <div class="container hidden">
+        <div class="card">
+            <p id="message"></p>
+            <div class="nav-buttons">
+                <span class="arrow" onclick="prevMessage()">◀</span>
+                <span class="arrow" onclick="nextMessage()">▶</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="end hidden">
+        <div class="letter-wrapper" onclick="openLetter()">
+            <div class="envelope">
+                <div class="letter">
+                    <p id="birthdayMessage">Click to open the letter...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <audio id="bg-music" loop>
+        <source src="happy-birthday.mp3" type="audio/mp3">
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
